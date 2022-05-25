@@ -37,7 +37,7 @@ public class TaskController {
 
     }
 
-    @DeleteMapping
+    @DeleteMapping(value = "/{taskId}")
     public ResponseEntity<Void> deleteTask(@PathVariable Long taskId) throws TaskNotFoundException {
         service.deleteById(taskId);
 
