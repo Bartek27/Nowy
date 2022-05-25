@@ -32,7 +32,7 @@ public class TaskController {
         return taskMapper.mapToTaskDtoList(tasks);
     }
 
-    @GetMapping(value = "/tasks/{taskId}")
+    @GetMapping(value = "/{taskId}")
     public TaskDto getTask(@PathVariable Long taskId) {
         return new TaskDto(1L, "test title", "test_content");
     }
