@@ -2,7 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.6.7'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
-	//id 'war'
+	id 'war'
 }
 
 group = 'com.crud'
@@ -30,7 +30,7 @@ dependencies {
 	testCompileOnly 'org.projectlombok:lombok:1.18.24'
 	testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
 
-	//compileOnly 'org.springframework.boot:spring-boot-starter-tomcat'
+	compileOnly 'org.springframework.boot:spring-boot-starter-tomcat'
 }
 
 tasks.named('test') {
